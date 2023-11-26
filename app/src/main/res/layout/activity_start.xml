@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Start"
+    android:orientation="vertical"
+    android:background="#F6EAC2">
+
+    <ImageView
+        android:id="@+id/imageButton2"
+        android:layout_width="148dp"
+        android:layout_height="165dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481"
+        android:src="@drawable/cat" />
+
+<!--    <Button-->
+<!--        android:id="@+id/button3"-->
+<!--        android:layout_width="190dp"-->
+<!--        android:layout_height="72dp"-->
+<!--        android:text="시작하기"-->
+<!--        android:textAlignment="center"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.501"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageButton2"-->
+<!--        app:layout_constraintVertical_bias="0.329" />-->
+
+
+    <com.example.firstandroid.CustomTextOutLineView
+        android:id="@+id/sul"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:text="술"
+        android:textAlignment="center"
+        android:textColor="#FF968A"
+        android:textSize="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718"
+        app:textStroke="true"
+        app:textStrokeColor="#000000"
+        app:textStrokeWidth="8.0" />
+
+    <com.example.firstandroid.CustomTextOutLineView
+        android:id="@+id/to"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:text="토"
+        android:textAlignment="center"
+        android:textColor="#F6EAC2"
+        android:textSize="70dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939"
+        app:textStroke="true"
+        app:textStrokeColor="#000000"
+        app:textStrokeWidth="8.0" />
+
+    <com.example.firstandroid.CustomTextOutLineView
+        android:id="@+id/ry"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:text="리"
+        android:textAlignment="center"
+        android:textColor="#97C1A9"
+        android:textSize="70dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.679"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718"
+        app:textStroke="true"
+        app:textStrokeColor="#000000"
+        app:textStrokeWidth="8.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="151dp"
+        android:layout_height="35dp"
+        android:text="알고 계셨나요?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:text="tip 받아오기 코드 작성"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.236" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
