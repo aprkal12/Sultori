@@ -21,7 +21,6 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
@@ -43,13 +42,22 @@
         android:inputType="text"
         android:hint="몸무게" />
 
-    <EditText
-        android:id="@+id/alchol"
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="주종 입력" />
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <RadioButton
+            android:id="@+id/alchol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="맥주"/>
+        <RadioButton
+            android:id="@+id/alchol2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="소주"/>
+    </RadioGroup>
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -82,6 +90,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="결과분석 레츠고" />
+
+    <Button
+        android:id="@+id/forSolution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="정보 전송" />
 
     <Button
         android:id="@+id/rebtn2"
