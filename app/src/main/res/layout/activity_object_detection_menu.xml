@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".ObjectDetectionMenu">
+
+    <TextView
+        android:id="@+id/month_year_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sultori"
+        android:fontFamily="@font/jalnangothic"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:textSize="30dp" />
+
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="@font/jalnangothic"
+        android:text="Object Detection" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <com.example.firstandroid.RectView
+            android:id="@+id/rectView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/jalnangothic"
+            android:text="업로드" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jalnangothic"
+            android:textStyle="bold"
+            android:text="라이브" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jalnangothic"
+            android:textStyle="bold"
+            android:text="촬영" />
+    </LinearLayout>
+
+</LinearLayout>
